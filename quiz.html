@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz The Strokes</title>
+    <link rel= "icon" type="image x icon" href="favicon icon.ico">  
+    <title>Navbar con Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-white text-2xl font-bold">MiLogo</a>
+    
+          <!-- Menu para pantallas grandes -->
+          <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-white hover:text-gray-300">Inicio</a>
+            <a href="#" class="text-white hover:text-gray-300">Servicios</a>
+            <a href="#" class="text-white hover:text-gray-300">Acerca de</a>
+            <a href="#" class="text-white hover:text-gray-300">Contacto</a>
+          </div>
+    
+          <!-- Botón del menú para pantallas pequeñas -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <!-- Menú desplegable para pantallas pequeñas -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600 mt-2">
+          <a href="#" class="block text-white px-4 py-2">Inicio</a>
+          <a href="#" class="block text-white px-4 py-2">Servicios</a>
+          <a href="#" class="block text-white px-4 py-2">Acerca de</a>
+          <a href="#" class="block text-white px-4 py-2">Contacto</a>
+        </div>
+      </nav>
+    
+      <script>
+        // Script para abrir/cerrar el menú en pantallas pequeñas
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+    
+</body>
+</html>
