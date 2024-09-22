@@ -6,63 +6,65 @@
     <title>The Strokes fandom page</title>
     <link rel= "icon" type="image x icon" href="favicon icon.ico">  
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- agrego fuentes titulos -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script> <!-- agrego tailwind-->   
-    
-    
+    <script src="styles.css"> </script>    
 
 </head>
+  <nav class="bg-blue-500 p-4 container-fluid">
+    <div class="bg-white rounded-lg shadow m-4 dark:bg-gray-800 text-blue-500" > <!-- pensar si quiero eliminar esto o no -->
+      <!-- Logo -->
+      <div class="text-3xl font-bold text-center mb-8">The Strokes fandom page</div>
+      <!-- Links -->
+      <div class="text-center mb-8">
+        <a href="index.html" class="text-blue-500 hover:text-gray-300 mx-8 ...">Inicio</a>
+        <a href="registro.html" class="text-blue-500 hover:text-gray-300 mx-8 ...">Discografía</a>
+        <a href="addAlbum.css" class="text-blue-500 hover:text-gray-300 mx-8 ...">Próximas fechas</a>
+
+      </div>
+
+</header>
 <body>
-  
-    <div class="h-14 bg-gradient-to-r from-sky-500 to-indigo-500"></div>
-    <h1> The Strokes Fanpage </h1> <!-- TITULO PRINCIPAL-->
 
-<img class= imagen src="13strokes-review1-videoSixteenByNineJumbo1600.jpg">
+<img class= "imagen size-full ..." src="13strokes-review1-videoSixteenByNineJumbo1600.jpg">
 
 
-    <h2 class="subtitulos"> The New Abnormal <!-- SUBTITULO -->
-    </h2>
+    <h2 class="text-3xl font-bold text-center mb-8"> Sobre ellos <!-- SUBTITULO --> </h2>
     
 </body>
-<p class="tipografiaparrafos"> The New Abnormal es el último disco que sacó la banda The Strokes en el año 2020. 
-    En octubre de 2016, el guitarrista Valensi indicó que la banda estaba "trabajando lenta pero segura en un álbum, estamos en sesiones de escritura".
-    Luego de 4 años, el 10 de abril de 2020 salió The New Abnormal en todas las plataformas.
+<p class="infogeneral text-gray-800 mx-8 ..."> The Strokes es una banda de rock formada en Nueva York en 1998. Su alineación clásica incluye a Julian Casablancas (vocalista), Nick Valensi (guitarra), Albert Hammond Jr. (guitarra), Nikolai Fraiture (bajo) y Fabrizio Moretti (batería). La banda se destacó en la escena musical de principios de los 2000 con su álbum debut "Is This It" (2001), que ayudó a revitalizar el rock de garaje. Con su sonido crudo y melódico, y letras sobre la vida urbana y el desencanto juvenil, se convirtieron en íconos del indie rock. A lo largo de su carrera, han lanzado varios álbumes exitosos y han influido en una nueva generación de bandas de rock.
 </p> 
 
-<h4 class="subtitulos"> Su discografía completa</h4> <!-- SUBTITULO -->
-<p class="tipografiaparrafos"> Conocé toda su discografía acá abajo:</p>
-<ul class="tipografiaparrafos">
-   <li> 
-    <a href= "https://www.youtube.com/watch?v=h92E8yadw7Y"> The Modern Age EP (1998) </a>
-    </li> 
-    <li>
-        <a href= "https://www.youtube.com/watch?v=Hgqp7l9s_9o&list=PLo6QvHZ4RyGmfOwFK9oJovOf8fTz2qGf9"> 
-    Is This It (2001) </a>
-</li>
-  <li> 
-    <a href= "https://www.youtube.com/watch?v=yQOJTLylm-A&list=PLK7C8WnYYBrTgVT1NJ2vdIv_LSImhx5JY"> Room on Fire (2002) </a>
-    </li>
-    <li>
-        <a href= "https://www.youtube.com/watch?v=6FnbPTaoahM&list=PLiN-7mukU_RF-nkDBjkxbw7I4PzqnR8Vj" > First Impressions of Earth (2008)</li>
-        </a>
-    <li> 
-        <a href= "https://www.youtube.com/watch?v=Xt_F4J4O-xo&list=PLo6QvHZ4RyGnzctm1N6oN4uxMUaJaxATl"> Angles (2011) </a>
-    </li>
-    <li>
-        <a href="https://www.youtube.com/watch?v=6KOT5kg59KI&list=PLC80P4gsPr-aKVPLwQz1Z32pPlDFkK0md"> Comedown Machine (2013) </a>
-    </li>
-    <li> 
-        <a href="https://www.youtube.com/watch?v=lGKJEW2oXJE&list=PL0H-wjUsjggHFLfhTK2jwmChdK8Q2ueEI"> Future Present Past (2016) </a>
-    </li>
-    <li> 
-        <a href="https://www.youtube.com/watch?v=o4qsjmLxhow&list=PLlLGTTlLJXAX-UwWbyH8m6SGSWRntdCf0"> The New Abnormal (2020) </a>
-    </li>
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-8"> Discografía </h1>
 
-<button type="button" <a href="#albums"> Agrega un album desde acá </a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/09/The_Strokes_-_Is_This_It_cover.png" alt="Image 1" class="w-full h-full object-cover" >
+      
+    </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://i.scdn.co/image/ab67616d0000b2730f35726025e0f025da4c688f" alt="Image 2" class="w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/FIOEstrokes.jpg" alt="Image 3" class="w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Strokes_1.jpg" alt="Image 4" class="w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/91/The_Strokes_-_Comedown_Machine.jpg" alt="Image 5" class="w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/The_Strokes_-_The_New_Abnormal.png" alt="Image 6" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
 
-<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+  <h1 class="text-2xl font-bold text-center mb-8 hover"> Hacé click acá y sumá un álbum :) </h1>
+<!-- acá arranca el footer -->
+<div>
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800 text-white">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Todos los derechos reservados. 
     </span>
@@ -78,6 +80,7 @@
         </li>
     </ul>
     </div>
+</div>
 </footer>
 
 </html>
