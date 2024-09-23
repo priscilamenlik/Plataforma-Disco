@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nuevo álbum</title>
     <link rel="stylesheet" href="addAlbum.css">
-    <script src="https://cdn.tailwindcss.com"></script> <!-- agrego tailwind-->  
+    <script src="https://cdn.tailwindcss.com"></script> <!-- agrego tailwind-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-    <h1 class="md:flex"> Agregá tu álbum acá </h1>
-    <div class="pt-8 pb-12">
-        <form class="formulario-base">
-            <label> Nombre del álbum </label>
-             <input for class="campos" type="text" name="Nombre del álbum"> 
-             <br>
-            <label> Fecha de lanzamiento </label> <input for class="campos" type="date">
-            <br>
-            <label> Comentarios </label><input class="campos" type="textarea"> 
-           <br> 
-            <label> Imagen (tapa del disco) <input class="campos" type="text" placeholder="Adjuntala desde una URL válida">
-            <br>
-           <div class="botonenvio">
-            <button class="btn"> Enviar </button>
-           </div> 
-        </form>
+<body class="background">
+ 
+    <div class="sidebar fixed top-0 left-0 bottom-0 p-4 w-[150px] overflow-y-auto text-center shadow-lg h-screen">
+        <div class="text-gray-100 text-sm">
+            <div class="p-1 flex items-center justify-between rounded-md">
+                <i class="bi bi-person-circle px-1 py-1 bg-blue-600 rounded-md"></i>
+                <h1 class="text-[12px] ml-1 text-gray-200 font-bold">Usuario</h1>
+                <i class="bi bi-x cursor-pointer" onclick="Openbar()"></i>
+            </div>
+            <hr class="my-2 text-gray-600">
+            <div>
+                <div class="p-2 mt-5 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-blue-600">
+                    <a href="albums.html" class="flex items-center text-gray-200">
+                        <i class="bi bi-album-fill"></i>
+                        <span class="text-[12px] ml-2">Álbumes</span>
+                    </a>
+                </div>
+                <div class="p-2 mt-5 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-blue-600"></div>
+                    <a href="albums.html" class="flex items-center text-gray-200">
+                        <i class="bi bi-album-fill"></i>
+                        <span class="text-[12px] ml-2">Canciones</span>
+                    </a>
+                </div>
+                
+                <div class="p-2 mt-5 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-blue-600">
+                    <a href="addAlbum.html" class="flex items-center text-gray-200">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span class="text-[12px] ml-2">Agregar Álbum</span>
+                    </a>
+                </div>
+                <div class="p-2 mt-5 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-blue-600">
+                    <a href="editAlbum.html" class="flex items-center text-gray-200">
+                        <i class="bi bi-pencil-fill"></i>
+                        <span class="text-[12px] ml-2">Editar Álbum</span>
+                    </a>
+                </div>
+                <div class="p-2 mt-5 flex items-center rounded-md px-2 duration-300 cursor-pointer hover:bg-blue-600">
+                    <a href="logout.html" class="flex items-center text-gray-200">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span class="text-[12px] ml-2">Cerrar Sesión</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+
+<div class="form-container">
+	<p class="title">Agregá un álbum</p>
+	<form class="form">
+        <div class="input-group">
+			<label for="text">Título</label>
+			<input type="text" name="text" id="text" placeholder="">
+		</div>
+        <div class="input-group">
+			<label for="text">Año de lanzamiento</label>
+			<input type="text" name="text" id="text" placeholder="">
+		</div>
+		<div class="input-group">
+			<label for="text">Descripción </label>
+			<input type="text" name="text" id="text" placeholder="Escribí acá"> 
+            <!-- acá no logré que me quede prolijo el textarea con todo el css asi que preferi dejarlo asi y consultar luego-->
+
+			<div class="forgot">
+			</div>
+		</div>
+		<button class="sign">Enviar</button>
+	</form>
+	
+		
+		
+</div>
+    
 </body>
 </html>
